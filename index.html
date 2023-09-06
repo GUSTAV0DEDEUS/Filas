@@ -20,19 +20,41 @@
       </header>
       <main class="main">
         <div class="cols" id="col-1">painel de entrada</div>
-        <div class="cols" id="col-2">video</div>
+        <div class="cols" id="col-2">
+          <video
+            class="video"
+            src="./src/assets/video1.mp4"
+            alt="videos para passar o tempo"
+            autoplay="true"
+          ></video>
+          <video
+            class="video"
+            src="./src/assets/video2.mp4"
+            alt="videos para passar o tempo"
+            autoplay="true"
+          ></video>
+          <video
+            class="video"
+            src="./src/assets/video3.mp4"
+            alt="videos para passar o tempo"
+            autoplay="true"
+          ></video>
+          <button class="btn" id="next">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+          <button class="btn" id="prev">
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+        </div>
         <div class="cols" id="col-3">painel de senhas</div>
       </main>
       <footer class="footer">
         <ul class="media">
-          <li class="numbers" id="1">1</li>
-          <li class="numbers" id="2">2</li>
-          <li class="numbers" id="3">3</li>
-          <li class="numbers" id="4">4</li>
-          <li class="numbers" id="5">5</li>
-          <li class="numbers" id="6">6</li>
+          <i class="fa-brands fa-square-github"></i>
+          <i class="fa-brands fa-linkedin"></i>
         </ul>
       </footer>
     </section>
+    <script src="./src/js/bundle.js"></script>
   </body>
 </html>
