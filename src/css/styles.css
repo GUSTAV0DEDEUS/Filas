@@ -28,8 +28,9 @@ hmtl, body {
   width: 200px;
   height: 80px;
 }
-.container .header i {
+.container .header svg {
   grid-area: icon;
+  font-size: 2rem;
 }
 .container .header nav {
   grid-area: navigator;
@@ -37,10 +38,13 @@ hmtl, body {
 }
 .container .main {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 2fr 1fr;
 }
 .container .main .cols {
-  height: 40vh;
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 }
 .container .footer {
   background: #000;
@@ -48,7 +52,34 @@ hmtl, body {
 }
 .container .footer .media {
   display: flex;
+  gap: 2rem;
   justify-content: center;
+}
+.container .footer .media svg {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.cols > video {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.btn#next {
+  right: 10px;
+}
+.btn#previous {
+  left: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

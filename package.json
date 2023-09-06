@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "babel src/js/script.js -o src/js/bundle.js --presets=@babel/preset-env -w",
-    "sass": "sass --watch src/sass/styles:src/css/styles.css"
+    "sass": "sass --watch src/sass/styles.sass:src/css/styles.css"
   },
   "keywords": [],
   "author": "",
